@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14FBCBB1E3AA93200116A19 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14FBCBA1E3AA93200116A19 /* LoginViewController.m */; };
+		B14FBCBE1E3AD47F00116A19 /* PostLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B14FBCBD1E3AD47F00116A19 /* PostLoginViewController.m */; };
 		B1521D841E391F7E0072C91F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1521D831E391F7E0072C91F /* main.m */; };
 		B1521D871E391F7E0072C91F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1521D861E391F7E0072C91F /* AppDelegate.m */; };
 		B1521D8A1E391F7E0072C91F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1521D891E391F7E0072C91F /* ViewController.m */; };
@@ -15,6 +17,9 @@
 		B1521D921E391F7E0072C91F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1521D901E391F7E0072C91F /* LaunchScreen.storyboard */; };
 		B1521D9D1E391F7E0072C91F /* DemoLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1521D9C1E391F7E0072C91F /* DemoLoginTests.m */; };
 		B1521DA81E391F7E0072C91F /* DemoLoginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1521DA71E391F7E0072C91F /* DemoLoginUITests.m */; };
+		B157273C1E395BBE008EAB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1521D8B1E391F7E0072C91F /* Main.storyboard */; };
+		B18D19791E578E22008EE368 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B18D19781E578E22008EE368 /* Preferences.m */; };
+		B18D197E1E57BB3F008EE368 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B18D197D1E57BB3F008EE368 /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B14FBCB91E3AA93200116A19 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B14FBCBA1E3AA93200116A19 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B14FBCBC1E3AD47F00116A19 /* PostLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostLoginViewController.h; path = ../PostLoginViewController.h; sourceTree = "<group>"; };
+		B14FBCBD1E3AD47F00116A19 /* PostLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostLoginViewController.m; path = ../PostLoginViewController.m; sourceTree = "<group>"; };
 		B1521D7F1E391F7E0072C91F /* DemoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1521D831E391F7E0072C91F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B1521D851E391F7E0072C91F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,11 @@
 		B1521DA31E391F7E0072C91F /* DemoLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1521DA71E391F7E0072C91F /* DemoLoginUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLoginUITests.m; sourceTree = "<group>"; };
 		B1521DA91E391F7E0072C91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18D196C1E56B05A008EE368 /* DemoLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		B18D19771E578E22008EE368 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		B18D19781E578E22008EE368 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		B18D197C1E57BB3F008EE368 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../Utils.h; sourceTree = "<group>"; };
+		B18D197D1E57BB3F008EE368 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +115,24 @@
 		B1521D811E391F7E0072C91F /* DemoLogin */ = {
 			isa = PBXGroup;
 			children = (
+				B18D197C1E57BB3F008EE368 /* Utils.h */,
+				B18D197D1E57BB3F008EE368 /* Utils.m */,
 				B1521D851E391F7E0072C91F /* AppDelegate.h */,
 				B1521D861E391F7E0072C91F /* AppDelegate.m */,
+				B14FBCBC1E3AD47F00116A19 /* PostLoginViewController.h */,
+				B14FBCBD1E3AD47F00116A19 /* PostLoginViewController.m */,
 				B1521D881E391F7E0072C91F /* ViewController.h */,
 				B1521D891E391F7E0072C91F /* ViewController.m */,
 				B1521D8B1E391F7E0072C91F /* Main.storyboard */,
+				B14FBCB91E3AA93200116A19 /* LoginViewController.h */,
+				B14FBCBA1E3AA93200116A19 /* LoginViewController.m */,
+				B18D19771E578E22008EE368 /* Preferences.h */,
+				B18D19781E578E22008EE368 /* Preferences.m */,
 				B1521D8E1E391F7E0072C91F /* Assets.xcassets */,
 				B1521D901E391F7E0072C91F /* LaunchScreen.storyboard */,
 				B1521D931E391F7E0072C91F /* Info.plist */,
 				B1521D821E391F7E0072C91F /* Supporting Files */,
+				B18D196C1E56B05A008EE368 /* DemoLogin-Bridging-Header.h */,
 			);
 			path = DemoLogin;
 			sourceTree = "<group>";
@@ -207,6 +230,8 @@
 				TargetAttributes = {
 					B1521D7E1E391F7E0072C91F = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = T2NR4WA7GR;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					B1521D971E391F7E0072C91F = {
@@ -256,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B157273C1E395BBE008EAB03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14FBCBB1E3AA93200116A19 /* LoginViewController.m in Sources */,
 				B1521D8A1E391F7E0072C91F /* ViewController.m in Sources */,
+				B18D19791E578E22008EE368 /* Preferences.m in Sources */,
 				B1521D871E391F7E0072C91F /* AppDelegate.m in Sources */,
+				B14FBCBE1E3AD47F00116A19 /* PostLoginViewController.m in Sources */,
+				B18D197E1E57BB3F008EE368 /* Utils.m in Sources */,
 				B1521D841E391F7E0072C91F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,10 +452,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T2NR4WA7GR;
 				INFOPLIST_FILE = DemoLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shrth.DemoLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoLogin/DemoLogin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -433,10 +469,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = T2NR4WA7GR;
 				INFOPLIST_FILE = DemoLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shrth.DemoLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoLogin/DemoLogin-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -505,6 +546,7 @@
 				B1521DAE1E391F7E0072C91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1521DAF1E391F7E0072C91F /* Build configuration list for PBXNativeTarget "DemoLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +555,7 @@
 				B1521DB11E391F7E0072C91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1521DB21E391F7E0072C91F /* Build configuration list for PBXNativeTarget "DemoLoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +564,7 @@
 				B1521DB41E391F7E0072C91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

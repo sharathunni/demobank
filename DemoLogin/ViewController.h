@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
+
+
+- (IBAction)signupButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *EmailTextField;
+@property (weak, nonatomic) IBOutlet UIDatePicker *DateofBirthTextField;
+@property (weak, nonatomic) IBOutlet UITextField *PasswordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *UsernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *FNTextField;
 
 
 @end
