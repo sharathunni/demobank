@@ -20,6 +20,9 @@
 		B157273C1E395BBE008EAB03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1521D8B1E391F7E0072C91F /* Main.storyboard */; };
 		B18D19791E578E22008EE368 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = B18D19781E578E22008EE368 /* Preferences.m */; };
 		B18D197E1E57BB3F008EE368 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B18D197D1E57BB3F008EE368 /* Utils.m */; };
+		B1D633DC1E5CF04C00A6A915 /* GetAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D633DB1E5CF04C00A6A915 /* GetAccounts.m */; };
+		B1D633DF1E5CF66F00A6A915 /* ChangePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D633DE1E5CF66F00A6A915 /* ChangePassword.m */; };
+		B1D633E21E5CF7B500A6A915 /* DoTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D633E11E5CF7B500A6A915 /* DoTransfer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,12 @@
 		B18D19781E578E22008EE368 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		B18D197C1E57BB3F008EE368 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		B18D197D1E57BB3F008EE368 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		B1D633DA1E5CF04C00A6A915 /* GetAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAccounts.h; sourceTree = "<group>"; };
+		B1D633DB1E5CF04C00A6A915 /* GetAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAccounts.m; sourceTree = "<group>"; };
+		B1D633DD1E5CF66F00A6A915 /* ChangePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassword.h; sourceTree = "<group>"; };
+		B1D633DE1E5CF66F00A6A915 /* ChangePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassword.m; sourceTree = "<group>"; };
+		B1D633E01E5CF7B500A6A915 /* DoTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoTransfer.h; sourceTree = "<group>"; };
+		B1D633E11E5CF7B500A6A915 /* DoTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoTransfer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,12 @@
 				B14FBCBA1E3AA93200116A19 /* LoginViewController.m */,
 				B18D19771E578E22008EE368 /* Preferences.h */,
 				B18D19781E578E22008EE368 /* Preferences.m */,
+				B1D633DA1E5CF04C00A6A915 /* GetAccounts.h */,
+				B1D633DB1E5CF04C00A6A915 /* GetAccounts.m */,
+				B1D633DD1E5CF66F00A6A915 /* ChangePassword.h */,
+				B1D633DE1E5CF66F00A6A915 /* ChangePassword.m */,
+				B1D633E01E5CF7B500A6A915 /* DoTransfer.h */,
+				B1D633E11E5CF7B500A6A915 /* DoTransfer.m */,
 				B1521D8E1E391F7E0072C91F /* Assets.xcassets */,
 				B1521D901E391F7E0072C91F /* LaunchScreen.storyboard */,
 				B1521D931E391F7E0072C91F /* Info.plist */,
@@ -299,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D633DC1E5CF04C00A6A915 /* GetAccounts.m in Sources */,
+				B1D633DF1E5CF66F00A6A915 /* ChangePassword.m in Sources */,
 				B14FBCBB1E3AA93200116A19 /* LoginViewController.m in Sources */,
 				B1521D8A1E391F7E0072C91F /* ViewController.m in Sources */,
 				B18D19791E578E22008EE368 /* Preferences.m in Sources */,
@@ -306,6 +323,7 @@
 				B14FBCBE1E3AD47F00116A19 /* PostLoginViewController.m in Sources */,
 				B18D197E1E57BB3F008EE368 /* Utils.m in Sources */,
 				B1521D841E391F7E0072C91F /* main.m in Sources */,
+				B1D633E21E5CF7B500A6A915 /* DoTransfer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

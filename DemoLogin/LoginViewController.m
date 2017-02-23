@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _LoginNameTextField.delegate = self;
+    _LoginPasswordField.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -75,9 +77,24 @@
 
 
 
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    return YES;
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self.view endEditing:YES];
+    return YES;
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    return  YES;
+}
+
 - (IBAction)loginButtonPressed:(id )sender {
 
-    // Check if loginname and password is empty
+    // Check if login name and password is empty
     if([_LoginNameTextField.text  isEqual: @""] ||  [_LoginPasswordField.text  isEqual: @""])
     {
         [self showAlertMessageWithTitle:@"Please enter username and password" title:@"Error!" handler:^(UIAlertAction *action) {}];
@@ -89,7 +106,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if([defaults objectForKey:(@"serveripaddress")] == nil && [defaults objectForKey:(@"serverport")] == nil)
         {
-              [self showAlertMessageWithTitle:@"Please register a IPAddress and Port" title:@"Error!" handler:^(UIAlertAction *action) {
+              [self showAlertMessageWithTitle:@"Please configure server and port" title:@"Error!" handler:^(UIAlertAction *action) {
                   [self performSegueWithIdentifier:@"SettingsButtonPressed" sender:nil];
               }];
             return ;
@@ -113,6 +130,10 @@
                 dispatch_async(dispatch_get_main_queue(), ^(){
                     [self performSegueWithIdentifier:@"postloginSegue" sender:self];
                 });
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+ 
+                [defaults setObject:_LoginNameTextField.text forKey:(@"loginusername")];
+                [defaults setObject:_LoginPasswordField.text forKey:(@"loginpassword")];
                 NSLog(@"Login Success");
             }
             else
@@ -125,7 +146,7 @@
     }];
     
     
-
+    
     
     
     

@@ -12,7 +12,7 @@
 #define paramUname "@pname"
 #define paramPass "@ppass"
 
-@interface LoginViewController : UIViewController <NSURLConnectionDelegate,NSURLSessionDelegate>
+@interface LoginViewController : UIViewController <NSURLConnectionDelegate,NSURLSessionDelegate,UITextFieldDelegate>
 @property (nonatomic, strong) NSURLConnection *connection;
 
 - (IBAction)loginButtonPressed:(id)sender;
